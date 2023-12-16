@@ -28,12 +28,12 @@ class _PostScreenState extends State<PostScreen> {
           ),
           backgroundColor: Colors.blueGrey,
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            postsBloc.add(PostsAddevent());
-          },
-          child: Icon(Icons.add),
-        ),
+        // floatingActionButton: FloatingActionButton(      //this is for post call of the api
+        //   onPressed: () {      
+        //     postsBloc.add(PostsAddevent());
+        //   },
+        //   child: Icon(Icons.add),
+        // ),
         body: BlocConsumer<PostsBloc, PostsState>(
           bloc: postsBloc,
           listener: (context, state) {
